@@ -3,6 +3,7 @@
 :root {
     --background-color: #ffff;
     --header-background-color: rgb(231, 0, 0);
+    --footer-background-color: rgb(221, 70, 28);
     --buttons-background-color: rgb(247, 104, 48);
     --buttons-hover: rgb(255, 172, 94);
     --open-sans: "Open Sans", sans-serif;
@@ -104,7 +105,7 @@ main {
         line-height: 30px;
     }
     .first-article {
-        background-image: url("/IMAGES/Static Images/Image-1.png");
+        background-image: url("/WebChat/IMAGES/Static Images/Image-1.png");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
@@ -125,14 +126,14 @@ main {
         margin-right: 6vh;
     }
     #secondaryBackground {
-        background-image: url("/IMAGES/Static Images/Express.jpeg");
+        background-image: url("/WebChat/IMAGES/Static Images/Express.jpeg");
         background-size: 210px;
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: 13rem;
     }
     #terciaryBackground {
-        background-image: url("/IMAGES/Static Images/TalkWithLibert.jpeg");
+        background-image: url("/WebChat/IMAGES/Static Images/TalkWithLibert.jpeg");
         background-size: 210px;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -151,7 +152,7 @@ main {
     }
     
     #cuarterBackground {
-        background-image: url("/IMAGES/Static Images/ConnectWithAll.jpeg");
+        background-image: url("/WebChat/IMAGES/Static Images/ConnectWithAll.jpeg");
         background-size: 210px;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -169,8 +170,49 @@ main {
         margin-top: 5rem;
     }
     .second-article {
-        background-image: url("/IMAGES/Static Images/No-Ads.jpeg");
+        background-image: url("/WebChat/IMAGES/Static Images/No-Ads.jpeg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
+    }
+
+/*Footer*/
+footer {
+    display: inline-flex;
+    margin-bottom: 0%;
+    width: 100%;
+    height: 24vh;
+    margin-top: 4rem;
+    padding: 10px;
+    background-color: var(--footer-background-color);
+}
+    .footerBlock {
+        display: inline-flex;
+    }
+    .bloque {
+        display: block;
+    }
+    .footerContact {
+        width: 60vh;
+        margin-left: 8vh;
+    }
+    .footerElements {
+        display: inline-block;
+        margin-left: 20vh;
+    }
+    .footerElements a {
+        color: var(--font-color);
+    }
+    .footerElements a:hover {
+        text-decoration: underline;
+    }
+    #google_translate_element {
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgwba(0, 0, 0, 0.2);
+        width: 10.6rem;
+        height: 1.6rem;
+        margin-top: 6vh;
+        margin-left: 25vh;
     }

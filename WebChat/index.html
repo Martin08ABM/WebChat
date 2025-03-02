@@ -9,12 +9,13 @@
 </head>
 <body>
     <header>
-        <h1>WebChat</h1>
+        <a href="index.html"><h1 style="color: black;">WebChat</h1></a>
         <div class="header-elements">
             <div class="elem-links">
                 <button class="buttons"><a href="index.html" class="links">Home</a></button>
+                <button class="buttons" style="margin-left: 2vh;"><a href="https://www.paypal.com/donate/?hosted_button_id=SRRVYRU7GSPKW" class="links" target="_blank">Donar</a></button>
                 <div class="signButtons">
-                    <button class="buttons"><a href="signup.html">Registrarse</a></button>
+                    <button class="buttons"><a href="Later Pages/Signs/Signup/signup.html">Registrarse</a></button>
                     <div class="signinButtons">
                         <button class="buttons"><a href="signin.html">Iniciar Sesión</a></button>
                     </div>
@@ -58,6 +59,34 @@
             </div>
         </article>
     </main>
-    <br><br>
+    <footer>
+        <div class="footerBlock">
+        <div class="bloque">
+            <h3 class="text" style="margin-left: 1rem;">&copy; 2025 Martin Adolfo Bravo Montaño</h3>
+            <div class="footerContact">
+                <h4 class="text">Para consultas o sugerencias contactar a traves de: <a href="mailto:webchat-contact@protonmail.com">webchat-contact@protonmail.com</a></h4>
+            </div>
+        </div>
+        <div class="footerElements">
+            <h4>Organización</h4>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=SRRVYRU7GSPKW">Donar</a>
+            <a href="">Blog</a>
+        </div>
+        <div class="footerElements">
+            <h4>Redes Sociales</h4>
+            <a href="https://github.com/Martin08ABM/WebChat" target="_blank">Github</a>
+        </div>
+        <!--Translate the web-->
+        <div id="google_translate_element"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'es',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                }, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </footer> 
 </body>
 </html>
