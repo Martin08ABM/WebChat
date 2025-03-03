@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <a href="/WebChat/Public/index.html"><h1 style="color: black;">WebChat</h1></a>
+        <a href="/WebChat/Public/index.html" style="text-decoration: none;"><h1 style="color: black;">WebChat</h1></a>
         <h3>Regístrate en WebChat</h3>
     </header>
     <main>
@@ -20,12 +20,15 @@
             <div style="display: block;">
                 <h2>Regístrate</h2>
                 <div class="inputsRegister">
-                    <h4>Escriba su apodo:</h4>
-                    <input type="text" name="" placeholder="Usuario" class="inputs" id="nameUser">
-                    <h4>Su correo electrónico:</h4>
-                    <input type="email" name="" placeholder="Correo electrónico" class="inputs" id="emailUser">
-                    <button class="buttonRegister" type="submit">Registrarse</button>
+                    <form role="form">
+                        <h4>Escriba su apodo:</h4>
+                        <input type="text" name="" placeholder="Usuario" class="inputs" id="UserName">
+                        <h4>Su correo electrónico:</h4>
+                        <input type="email" name="" placeholder="Correo electrónico" class="inputs" id="UserEmail">
+                        <button class="buttonRegister" type="submit" id="submit">Registrarse</button>
+                    </form>
                 </div>
+                <h6>¿Ya tienes cuenta? Clica <a href="/WebChat/Public/Later Pages/Signs/Signin/signin.html">aquí</a></h6>
             </div>
             <h4 class="intermedium">o sino</h4>
             <div class="signupButtons">
@@ -42,6 +45,17 @@
             
         </article>
     </main>
+    <footer>
+        <div class="bloque">
+            <h3 class="text" style="margin-left: 1rem;">&copy; 2025 Martin Adolfo Bravo Montaño</h3>
+            <div class="footerContact">
+                <h4 class="text">Para consultas o sugerencias contactar a traves de: <a href="mailto:webchat-contact@protonmail.com">webchat-contact@protonmail.com</a></h4>
+            </div>
+        </div>
+        <div class="tratamientoDatos">
+            <h5>Si quiere saber que hacemos con sus datos, puede consultarlo clicando <a href="/WebChat/Public/DownloadDocuments/tratamiento_de_datos.pdf" download="tratamiento_de_datos.pdf">aquí</a> para descargar el documento en el que lo explicamos.</h5>
+        </div>
+    </footer> 
     <!--JS-->
     <script src="JS/signupGoogle.js"></script>
     <script src="JS/signupNormal.js"></script>

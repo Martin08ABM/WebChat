@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebChat | Sign Up</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <meta name="google-signin-client_id" content="96843423519-noddsk11rgb13m0jk9cvnf9telgli22c.apps.googleusercontent.com">
+    <!--CSS of Sign Up Page-->
+    <link rel="stylesheet" href="CSS/signin.css">
+</head>
+<body>
+    <header>
+        <a href="/WebChat/Public/index.html" style="text-decoration: none;"><h1 style="color: black;">WebChat</h1></a>
+        <h3>Iniciar sesión en WebChat</h3>
+    </header>
+    <main>
+        <article class="register">
+            <div style="display: block;">
+                <h2>Iniciar sesión</h2>
+                <div class="inputsRegister">
+                    <form role="form">
+                        <h4>Escriba su apodo:</h4>
+                        <input type="text" name="" placeholder="Usuario" class="inputs" id="UserName">
+                        <h4>Escriba su código secreto:</h4>
+                        <input type="text" name="" placeholder="Códgo secreto" class="inputs" id="Code"><!-- IMPORTANTE Hacer la lógica para el código secreto más tarde-->
+                        <h4>Su correo electrónico:</h4>
+                        <input type="email" name="" placeholder="Correo electrónico" class="inputs" id="UserEmail">
+                        <button class="buttonRegister" type="submit" id="submit">Iniciar sesión</button>
+                    </form>
+                </div>
+                <h6>¿Todavía no tienes cuenta? Clica <a href="/WebChat/Public/Later Pages/Signs/Signup/signup.html">aquí</a></h6>
+            </div>
+            <h4 class="intermedium">o sino</h4>
+            <div class="signupButtons">
+                <div class="custom-signin">
+                    <h4>Google</h4>
+                    <!-- Contenedor del botón de Google -->
+                    <div id="g_id_onload"
+                        data-client_id="96843423519-noddsk11rgb13m0jk9cvnf9telgli22c.apps.googleusercontent.com"
+                        data-callback="handleCredentialResponse">
+                    </div>
+                    <div class="g_id_signin" data-type="standard"></div>
+                </div>
+            </div>
+            
+        </article>
+    </main>
+    <footer>
+        <div class="bloque">
+            <h3 class="text" style="margin-left: 1rem;">&copy; 2025 Martin Adolfo Bravo Montaño</h3>
+            <div class="footerContact">
+                <h4 class="text">Para consultas o sugerencias contactar a traves de: <a href="mailto:webchat-contact@protonmail.com">webchat-contact@protonmail.com</a></h4>
+            </div>
+        </div>
+    </footer> 
+    <!--JS-->
+    <script src="JS/signupGoogle.js"></script>
+    <script src="JS/signupNormal.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-// Prueba 2do btn
+// Función registro e inicio de sesión con Google
 function handleCredentialResponse(response) {
     console.log("Token recibido:", response.credential); // Asegúrate de ver este token en la consola
 
@@ -18,7 +18,7 @@ function handleCredentialResponse(response) {
             console.log('Usuario autenticado correctamente');
             window.location.href = '/dashboard'; // Redirigir si es necesario
         } else {
-            console.log('Error en el proceso de inicio de sesión o registro');
+            console.log('Error en el proceso de o registro');
         }
     })
     .catch(error => console.error('Error:', error));
