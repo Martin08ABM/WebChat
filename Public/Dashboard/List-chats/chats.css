@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --background-color: #ffff;
+    --header-background-color: rgb(231, 0, 0);
+    --footer-background-color: rgb(221, 70, 28);
+    --buttons-background-color: rgb(247, 104, 48);
+    --buttons-hover: rgb(255, 172, 94);
+    --open-sans: "Open Sans", sans-serif;
+    --font-color: black;
+    --font-color-light: white;
+}
+
+/*General CSS*/
+body {
+    margin: 0º;
+    width: 100%;
+    max-width: 100%;
+    font-family: var(--open-sans);
+}
+header {
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--header-background-color);
+}
+main {
+    width: 100%;
+    max-width: 100%;
+}
+footer {
+    width: 100%;
+    max-width: 100%;
+}

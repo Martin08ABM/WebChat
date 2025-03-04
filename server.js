@@ -15,7 +15,7 @@ mongoose.connect('mongodb://localhost:27017/usuarios', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log('✅ Conectado a MongoDB'))
-  .catch(err => console.error('❌ Error en MongoDB:', err));
+    .catch(err => console.error('❌ Error en MongoDB:', err));
 
 // Definir esquema de usuario
 const UserSchema = new mongoose.Schema({
@@ -87,7 +87,7 @@ function authenticateToken(req, res, next) {
 }
 
 // Ruta protegida (Ejemplo)
-app.get('/perfil', authenticateToken, async (req, res) => {
+app.get('/Public/Dashboard/chats.html', authenticateToken, async (req, res) => {
     const user = await User.findById(req.user.id);
     if (!user) return res.status(404).json({ success: false, message: 'Usuario no encontrado' });
 
